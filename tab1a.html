@@ -1,0 +1,21 @@
+
+
+<div ng-app="myApp1" ng-controller="myfirst" >
+<h2>TAB 1</h2>
+<p> <b>SELECT THE REQUIRED ITEMS </b></p>
+<select ng-model="test" >
+	<option value="">ALL</option>
+	<option value="PHOTO">photo</option>
+	<option value="VIDEO">Videos</option>
+	<option value="TEXT">Text</option>
+</select>
+<ul>
+  <li ng-repeat="x in names | filter:test">
+    {{ x }}
+  </li>
+</ul>
+
+</div>
+
+
+

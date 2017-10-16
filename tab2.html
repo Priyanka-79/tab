@@ -1,0 +1,29 @@
+
+<style type="text/css">
+//<li ng-repeat="x in img" ng-click="clickimage()"><img src="{{img.src}}"></li>
+	img{
+		background-color: white;
+		height: 200px;
+		width: 100px;
+		border:2px solid black;
+	}
+	li{
+		text-decoration: none;
+		display: inline;
+	}
+</style>
+<body>
+<h1>TAB2</h1>
+
+<div ng-app="myApp1"  ng-controller="mysecond" >
+ <h3>Click on the {{name}}</h3>
+ <section ng-model="container">
+  <img src="{{image}}" style="width: 200px;height: 200px;" alt="{{image}}" />
+  </section>
+  <ul>
+  	<li ng-repeat="x in img" ng-click="clickimage()"><img src="{{x.src}}" alt="{{x.alt}}" style="width: 50px;height: 50px;"  ></li>
+  </ul>
+  
+  
+</div>
+

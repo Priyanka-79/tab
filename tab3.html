@@ -1,0 +1,15 @@
+
+<h1>TAB3</h1>
+<div ng-app="myApp1"  ng-controller="mythird" ng-init="item=['item1','item2','item3']">
+  <input ng-model="add">
+  <button ng-click="addItem()">Add</button>
+  <ul>
+    <li ng-repeat="x in item">
+      {{ x }}
+      <span ng-click="removeItem($index)"><button>REMOVE</button></span>
+    </li>
+  </ul>
+  
+  
+</div>
+
